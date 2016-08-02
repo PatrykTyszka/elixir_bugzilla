@@ -10,7 +10,7 @@ defmodule ElixirBugzilla do
       # Start the endpoint when the application starts
       supervisor(ElixirBugzilla.Endpoint, []),
       # Start the Ecto repository
-      supervisor(ElixirBugzilla.Repo, []),
+      # supervisor(ElixirBugzilla.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(ElixirBugzilla.Worker, [arg1, arg2, arg3]),
     ]
