@@ -29,6 +29,7 @@ defmodule ElixirBugzilla.User do
     field :username, :string
     field :password, :string, virtual: true
     field :password_hash, :string
+    has_many :videos, ElixirBugzilla.Video
 
     timestamps
   end

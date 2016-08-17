@@ -36,6 +36,7 @@ defmodule ElixirBugzilla.Web do
 
       import ElixirBugzilla.Router.Helpers
       import ElixirBugzilla.Gettext
+      import ElixirBugzilla.Auth, only: [authenticate_user: 2]
     end
   end
 
@@ -58,6 +59,8 @@ defmodule ElixirBugzilla.Web do
   def router do
     quote do
       use Phoenix.Router
+
+      import ElixirBugzilla.Auth, only: [authenticate_user: 2]
     end
   end
 
